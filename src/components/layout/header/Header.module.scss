@@ -48,8 +48,6 @@
   height: 100dvh;
   
   background-color: rgba(18, 18, 18, 0.573); // ¡Indispensable un color semi-transparente!
-  backdrop-filter: blur(40px) saturate(120%); // Si querías el de la foto, usa 40px en lugar de 5px
-  -webkit-backdrop-filter: blur(40px) saturate(120%); // Prefijo obligatorio para Safari/iOS
 
   display: flex;
   flex-direction: column;
@@ -58,6 +56,8 @@
   padding-left: 15%;
   gap: .5rem;
   transition: opacity 0.3s ease, visibility 0.3s ease;
+  -webkit-backdrop-filter: blur(40px) saturate(120%) !important;
+  backdrop-filter: blur(40px) saturate(120%) !important;
 }
 
 .link {

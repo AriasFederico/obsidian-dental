@@ -1,0 +1,119 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 500;
+  padding: $space-2 $space-2;
+  animation: shadow linear;
+  animation-timeline: scroll();
+  animation-range: 0 20rem;
+  animation-fill-mode: both;
+
+  .container {
+    max-width: 1280px;
+    // tamaño variable
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .logo {
+    font-size: $font-base;
+    // font-family: $font-span;
+    font-weight: 200;
+    letter-spacing: 2px;
+
+    &::after {
+      // content: ' asd';
+    }
+  }
+  
+  .nav {
+    display: none;
+  }    
+
+  .link {
+    color: #ffffff;
+
+  }
+  
+  .navOpen {
+  // 1. Posicionamiento
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  
+  background-color: rgba(18, 18, 18, 0.573); // ¡Indispensable un color semi-transparente!
+  backdrop-filter: blur(40px) saturate(120%); // Si querías el de la foto, usa 40px en lugar de 5px
+  -webkit-backdrop-filter: blur(40px) saturate(120%); // Prefijo obligatorio para Safari/iOS
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 15%;
+  gap: .5rem;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.link {
+  font-family: $font-accent;
+  font-size: $font-2xl;
+
+  &:hover {
+    color: $color-primary;
+  }
+
+  @include for-tablet(){
+    font-size: $font-4xl;
+  }
+}
+
+
+  .cta {
+    display: none;
+
+    @include for-tablet(){
+      display: block;
+    }
+  }
+
+  .ctaMobile {
+    @include for-tablet(){
+      display: none;
+    }
+  }
+
+  .burger {    
+    z-index: 500;
+    color: $foreground;
+    .icon {
+      width: 1.7rem;
+      height: 1.7rem;
+    }
+
+    @include for-tablet(){
+      // display: none;
+    }
+  }
+
+  .logo {
+    color: $foreground;
+  }
+}
+
+@keyframes shadow {
+  from {
+  }
+  to {
+    background-color: $bg-main;
+    box-shadow: $shadow-soft;
+    // backdrop-filter: blur(10px);
+    // border-bottom: 1px solid $color-border;
+    // padding: 0 $space-2;
+  }
+}

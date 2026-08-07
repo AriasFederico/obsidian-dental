@@ -1,0 +1,19 @@
+.topSection {
+	display: flex;
+	align-items: center;
+	gap: $space-1;
+	width: fit-content;
+	// background-color: white;
+	// padding: $space-1 $space-2;
+	border-radius: $radius-lg;
+	box-shadow: $shadow-soft;
+	margin-bottom: $space-2;
+}
+
+.text {
+	font-size: $font-sm;
+	font-weight: 500;
+	font-family: $font-span;
+	color: $color-primary;
+	letter-spacing: 2px;
+}

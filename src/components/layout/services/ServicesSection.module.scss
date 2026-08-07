@@ -1,0 +1,17 @@
+.container {
+    width: 100%;
+}
+
+.header {
+    margin-bottom: $space-6;
+}
+
+.items {
+
+    @include for-tablet(){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: $space-4;
+        row-gap: $space-8;
+    }
+}

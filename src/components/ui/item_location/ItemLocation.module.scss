@@ -1,0 +1,20 @@
+.ItemLocation {
+    border-top: 1px solid $color-border;
+    padding: $space-2 0 $space-6;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: $space-1;
+    color: $foreground-muted;
+    
+    .name {
+        font-family: $font-span;
+    }   
+}
+
+.desc {
+    margin-top: $space-1;
+    color: $foreground;
+}

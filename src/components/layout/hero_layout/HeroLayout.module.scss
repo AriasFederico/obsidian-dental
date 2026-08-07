@@ -1,0 +1,60 @@
+.heroLayout {
+  // --- CONFIGURACIÓN PARA MOBILE ---
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  &.light {background-color: $white;}
+  &.soft {background-color: $bg-soft;}
+  &.bgImage {
+    background-image: url('https://media.base44.com/images/public/6a738127593d00fa2c219e93/809a5dcf7_generated_image.png');
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100vh;
+      /* El gradiente: empieza sólido, se aclara al medio y se vuelve muy transparente al final */
+      background: linear-gradient(
+        to top, 
+        $bg-main 0%,      /* background sólido */
+        #222222d8 50%,   /* via-background/85 */
+        $bg-main 100%   /* to-background/40 */
+      );
+    }
+  }
+  
+  .container {
+    z-index: 100;
+    width: 100%;
+    @include container;
+
+    @include for-tablet(){
+      padding: 0 $space-4;
+    }
+    // padding: 0 $space-4;
+  }
+
+  // --- CONFIGURACIÓN PARA DESKTOP ---
+  @include for-tablet {
+    min-height: 100vh;
+    padding:0;
+    
+    .container {
+      // comentar width si es un hero con bg
+        // width: auto;
+      // comentar width si es un hero con bg
+        display: flex;
+        align-items: center;
+        gap: $space-4;
+      }
+    }
+}

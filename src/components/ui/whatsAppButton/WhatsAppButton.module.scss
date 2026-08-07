@@ -1,0 +1,11 @@
+.whatsAppButton {
+    position: fixed;
+    transition: bottom 0.2s ease, position 0.2s ease;
+    bottom: $space-6;
+    right: $space-2;
+    
+    @include for-tablet(){
+        bottom: $space-9;
+        right: $space-6;
+    }
+}

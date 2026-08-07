@@ -1,0 +1,33 @@
+.container {
+    width: 100%;
+}
+
+.cta {
+    margin-top: $space-3;
+}
+
+.header {
+}
+
+
+.content {
+    margin-top: $space-6;
+    @include for-tablet(){
+        display: flex;
+        // align-items: center;
+        gap: $space-6;
+    }
+}
+
+.data {
+    flex: 1;
+}
+
+.mapContainer {
+    margin-top: $space-4;
+    flex: 1;
+
+    @include for-tablet(){
+        margin: 0;
+    }
+}

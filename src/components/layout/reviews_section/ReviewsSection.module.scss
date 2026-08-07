@@ -1,0 +1,40 @@
+
+.reviewsContainer {
+    margin: $space-6 0;
+    @include for-tablet(){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: $space-4;
+        // row-gap: $space-8;
+    }
+}
+
+.review {
+    border-top: 1px solid $color-border;
+    margin-bottom: $space-2;
+    padding: $space-2 0;
+
+    @include for-tablet(){
+        margin: 0;
+    }
+    
+    .rating {
+        display: flex;
+        gap: .3rem;
+    }
+
+    .star {
+        margin-top: $space-2;
+        color: $color-orange;
+    }
+
+    .quote {
+        margin-top: $space-2;
+    }
+    
+    
+    .author {
+        font-size: $font-sm;
+        margin-top: $space-2;
+    }
+}

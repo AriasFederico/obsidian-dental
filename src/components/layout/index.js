@@ -1,4 +1,5 @@
 export * from './about/About';
+export * from './coverageSection/CoverageSection';
 export * from './cta_section/CtaSection';
 export * from './footer/Footer';
 export * from './header/Header';
@@ -8,3 +9,4 @@ export * from './location_section/LocationSection';
 export * from './reviews_section/ReviewsSection';
 export * from './section_layout/SectionLayout';
 export * from './services/ServicesSection';
+export * from './teamSection/TeamSection';

@@ -1,0 +1,37 @@
+.header {
+    margin-bottom: $space-6;
+    width: 100%;
+
+    @include for-tablet(){
+        margin: 0;
+    }
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: $space-4;
+
+    @include for-tablet(){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .item {
+        border-top: 1px solid $color-border;
+        padding-top: $space-4;
+    }
+
+    .speciality {
+        display: inline-block;
+        color: $color-primary;
+        margin-top: $space-1;
+        letter-spacing: 2px;
+        font-size: 11px;
+    }
+
+    .desc {
+        margin-top: $space-1;
+    }
+
+}

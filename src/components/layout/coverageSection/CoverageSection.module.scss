@@ -1,0 +1,23 @@
+.header {
+    width: 100%;
+}
+
+.items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: $space-2;
+
+    .coverage {
+        border: 1px solid $color-border;
+        text-align: center;
+        padding: $space-4 0;
+        transition: $transition;
+        user-select: none;
+
+        &:hover {
+            border-color: $color-primary;
+            box-shadow: $shadow-primary;
+        }
+    }
+}

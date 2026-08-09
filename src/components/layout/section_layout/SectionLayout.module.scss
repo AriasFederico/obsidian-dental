@@ -1,12 +1,11 @@
 .section {
-    padding: $space-9 0;
+    padding: 9rem 0;
     &.light {background-color: $white;}
     &.soft {background-color: $bg-soft;}
     border-bottom: 1px solid $color-border;
 
     .container {
         @include container;
-
     }
     
     @include for-tablet(){

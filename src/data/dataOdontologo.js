@@ -148,6 +148,54 @@ export const dataOdontologo = {
     cta: 'https://www.google.com/maps',
   },
 
+  teamSection: {
+    top_section: 'Nuestro equipo',
+    title: 'Profesionales a cargo de tu sonrisa',
+
+    team: [
+      {
+        name: 'Dra. Elena Vázquez',
+        speciality: 'Directora · Odontóloga restauradora',
+        desc: 'Especialista en rehabilitación oral y estética. Más de 18 años diseñando sonrisas con protocolo digital.',
+      },
+      {
+        name: 'Dr. Andrés Molina',
+        speciality: 'Implantólogo',
+        desc: 'Cirugía guiada por escáner 3D y carga inmediata. Miembro de la Asociación Mexicana de Implantología.',
+      },
+      {
+        name: 'Dra. Sofía Reyes',
+        speciality: 'Ortodoncista',
+        desc: 'Alineadores invisibles y ortodoncia interceptiva. Planeación biomecánica personalizada por paciente.',
+      },
+      {
+        name: 'Dr. Tomás Herrera',
+        speciality: 'Endodoncista',
+        desc: 'Tratamiento de conductos con microscopio óptico. Conservación máxima de la estructura dental.',
+      },
+    ],
+  },
+
+  coverageSection: {
+    top_section: 'Cobertura',
+    title: 'Obras sociales y seguros',
+    text: 'Trabajamos con las principales obras sociales y aseguradoras. Consulta tu cobertura escribiéndonos por WhatsApp.',
+    items: [
+      'IMSS',
+      'ISSSTE',
+      'Pemex',
+      'SEDENA',
+      'Seguro Popular',
+      'GNP',
+      'AXA',
+      'MetLife',
+      'Allianz',
+      'Bupa',
+      'Mapfre',
+      'Zurich',
+    ],
+  },
+
   location: {
     top_section: 'Dónde estamos',
     title: 'Ubicación',

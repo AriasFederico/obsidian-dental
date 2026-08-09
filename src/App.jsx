@@ -1,6 +1,7 @@
 import './App.scss';
 import {
   About,
+  CoverageSection,
   CtaSection,
   Footer,
   Header,
@@ -8,6 +9,7 @@ import {
   LocationSection,
   ReviewsSection,
   ServicesSection,
+  TeamSection,
 } from './components/layout';
 import { WhatsAppButton } from './components/ui';
 import { dataOdontologo } from './data/dataOdontologo';
@@ -23,6 +25,8 @@ function App() {
     cta_section,
     footer,
     whatsAppButton,
+    teamSection,
+    coverageSection,
   } = dataOdontologo;
   return (
     <div className='app'>
@@ -31,6 +35,8 @@ function App() {
       <ServicesSection data={services} />
       <About data={about} />
       <ReviewsSection data={reviews_section} />
+      <TeamSection data={teamSection} />
+      <CoverageSection data={coverageSection} />
       <LocationSection data={location} />
       <CtaSection data={cta_section} />
       <Footer data={footer} />

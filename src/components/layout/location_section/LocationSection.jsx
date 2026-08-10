@@ -3,7 +3,7 @@ import { SectionLayout } from '../';
 import styles from './LocationSection.module.scss';
 export const LocationSection = ({ data }) => {
   return (
-    <SectionLayout id='location'>
+    <SectionLayout id='location' bgVariant={'soft'}>
       <div className={styles.container}>
         <div className={styles.header}>
           <TopSection text={data.top_section} />

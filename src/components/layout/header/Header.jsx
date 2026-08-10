@@ -28,7 +28,7 @@ export const Header = ({ data }) => {
     <header className={styles.header}>
       <div className={styles.container}>
         {/* LOGO_COMPONENT */}
-        <a href={'#'} className={styles.logo} onClick={() => setIsOpen(false)}>
+        <a href={'/'} className={styles.logo} onClick={() => setIsOpen(false)}>
           {/* img si aplica */}
           Obsidian · Dental
         </a>

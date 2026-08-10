@@ -30,6 +30,11 @@
         &:hover {
             border-color: $color-primary;
             box-shadow: $shadow-primary;
+
+            p {
+                transition: $transition;
+                color: $foreground;
+            }
         }
 
         @include for-tablet(){

@@ -6,11 +6,11 @@ import styles from './ReviewsSection.module.scss';
 export const ReviewsSection = ({ data }) => {
   const Star = TiStarFullOutline;
   return (
-    <SectionLayout id='reviews'>
+    <SectionLayout id='reviews' bgVariant={'soft'}>
       <div className={styles.container}>
         <div className={styles.header}>
           <TopSection text={data.top_section} />
-          <h2>{data.title}</h2>
+          <h2 className={styles.title}>{data.title}</h2>
         </div>
 
         <div className={styles.reviewsContainer}>
@@ -27,11 +27,7 @@ export const ReviewsSection = ({ data }) => {
           ))}
         </div>
 
-        <ButtonCta
-          href={data.cta}
-          text={'VER TODAS EN GOOGLE MAPS -'}
-          variant='secondary'
-        />
+        <ButtonCta href={data.cta} text={'VER MÁS -'} />
       </div>
     </SectionLayout>
   );

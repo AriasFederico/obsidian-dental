@@ -3,7 +3,7 @@ import { SectionLayout } from '../';
 import styles from './LocationSection.module.scss';
 export const LocationSection = ({ data }) => {
   return (
-    <SectionLayout id='location' bgVariant={'soft'}>
+    <SectionLayout id='location'>
       <div className={styles.container}>
         <div className={styles.header}>
           <TopSection text={data.top_section} />
@@ -21,7 +21,7 @@ export const LocationSection = ({ data }) => {
               />
             ))}
             <div className={styles.cta}>
-              <ButtonCta variant='secondary' text={'CÓMO LLEGAR -'} />
+              <ButtonCta text={'CÓMO LLEGAR'} />
             </div>
           </div>
           <div className={styles.mapContainer}>

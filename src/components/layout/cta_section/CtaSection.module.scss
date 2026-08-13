@@ -6,6 +6,7 @@
 }
 
 .title {
+    color: $primary-foreground;
     &::after {
         content: 'Comienza ahora';
         display: block;

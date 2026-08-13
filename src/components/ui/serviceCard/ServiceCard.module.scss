@@ -29,6 +29,7 @@
 .name {
     margin-top: $space-2;
     font-size: $font-xl;
+    color: $primary-foreground;
 }
 
 .desc {
@@ -36,14 +37,25 @@
 }
 
 .cta {
-    color: $foreground-muted;
+    color: $color-primary;
     font-size: $font-sm;
     // font-family: $font-span;
     margin-top: $space-3;
     letter-spacing: 2px;
+    display: flex;
+    gap: $space-1;
+    align-items: center;
+
+
+    &::after {
+        // position: absolute;
+        content: '';
+        border-bottom: 1px solid $color-primary;
+        width: 2rem;
+    }
 
     &:hover {
-        color: $foreground;
+        color: $color-primary-dark;
     }
 }
 

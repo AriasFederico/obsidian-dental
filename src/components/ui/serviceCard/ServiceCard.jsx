@@ -13,7 +13,7 @@ export const ServiceCard = ({ data }) => {
         <h3 className={styles.name}>{data.name}</h3>
         <p className={styles.desc}>{data.desc}</p>
         <a href={data.cta} className={styles.cta}>
-          RESERVAR CONSULTA -
+          RESERVAR CONSULTA
         </a>
       </div>
     </div>

@@ -7,6 +7,11 @@
         gap: $space-4;
         // row-gap: $space-8;
     }
+
+}
+
+.title {
+    color: $primary-foreground;
 }
 
 .review {
@@ -17,6 +22,7 @@
     @include for-tablet(){
         margin: 0;
     }
+
     
     .rating {
         display: flex;
@@ -30,11 +36,13 @@
 
     .quote {
         margin-top: $space-2;
+        color: $primary-foreground;
     }
     
     
     .author {
         font-size: $font-sm;
         margin-top: $space-2;
+        color: $primary-foreground;
     }
 }

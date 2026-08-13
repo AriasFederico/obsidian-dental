@@ -4,7 +4,7 @@ import styles from './TeamSection.module.scss';
 
 export const TeamSection = ({ data }) => {
   return (
-    <SectionLayout direction={'column'} bgVariant={'soft'}>
+    <SectionLayout direction={'column'}>
       <div className={styles.header}>
         <TopSection text={data.top_section} />
         <h2>{data.title}</h2>

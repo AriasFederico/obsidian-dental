@@ -4,7 +4,7 @@ import styles from './CtaSection.module.scss';
 
 export const CtaSection = ({ data }) => {
   return (
-    <SectionLayout>
+    <SectionLayout bgVariant={'soft'}>
       <div className={styles.container}>
         <h2 className={styles.title}>{data.title}</h2>
         <p className={styles.text}>{data.text}</p>

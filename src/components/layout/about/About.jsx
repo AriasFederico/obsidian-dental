@@ -4,7 +4,7 @@ import styles from './About.module.scss';
 
 export const About = ({ data }) => {
   return (
-    <SectionLayout id={'about'} bgVariant={'soft'}>
+    <SectionLayout id={'about'}>
       <div className={styles.media}>
         <img src={data.img} alt={data.title} className={styles.img} />
       </div>

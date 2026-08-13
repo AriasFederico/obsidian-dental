@@ -29,12 +29,12 @@ export const dataOdontologo = {
         text: 'AGENDAR POR WHATSAPP',
         href: buildWaLink('Hola!, me gustaría agendar un turno.'),
         variant: 'primary',
+        icon: 'cta',
       },
       {
         text: 'VER SERVICIOS',
         href: '#services',
         variant: 'secondary',
-        icon: 'arrowDown',
       },
     ],
   },

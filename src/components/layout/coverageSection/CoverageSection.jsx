@@ -4,10 +4,10 @@ import styles from './CoverageSection.module.scss';
 
 export const CoverageSection = ({ data }) => {
   return (
-    <SectionLayout direction={'column'}>
+    <SectionLayout direction={'column'} bgVariant={'soft'}>
       <div className={styles.header}>
         <TopSection text={data.top_section} />
-        <h2>{data.title}</h2>
+        <h2 className={styles.title}>{data.title}</h2>
         <p>{data.text}</p>
       </div>
       <div className={styles.items}>

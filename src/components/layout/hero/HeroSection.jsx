@@ -29,15 +29,15 @@ export const HeroSection = ({ data }) => {
           className={styles.ctas}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.50 }}
+          transition={{ duration: 1, delay: 0.5 }}
         >
           {ctas?.map((link, index) => (
             <ButtonCta
               key={index}
               text={link.text}
               variant={link.variant}
-              icon={link.icon}
               href={link.href}
+              iconLeft={link.icon}
             />
           ))}
         </motion.div>

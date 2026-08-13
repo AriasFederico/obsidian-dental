@@ -5,6 +5,10 @@
     @include for-tablet(){
         margin: 0;
     }
+
+    .title {
+        color: $primary-foreground;
+    }
 }
 
 .items {
@@ -26,14 +30,17 @@
         padding: $space-4 0;
         transition: $transition;
         user-select: none;
+        p {
+            color: $primary-foreground;
+        }
 
         &:hover {
             border-color: $color-primary;
-            box-shadow: $shadow-primary;
+            // box-shadow: $shadow-primary;
 
             p {
                 transition: $transition;
-                color: $foreground;
+                color: $color-primary;
             }
         }
 
